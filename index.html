@@ -5,50 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- main css -->
+    <!-- custom css -->
     <link rel="stylesheet" href="style/main.css">
 
     <!-- font awesome css -->
     <link rel="stylesheet" href="style/css/fontawesome.css">
-    <link rel="stylesheet" href="style/css/regular.css">
     <link rel="stylesheet" href="style/css/solid.css">
+    <link rel="stylesheet" href="style/css/regular.css">
+    <link rel="stylesheet" href="style/css/brands.css">
 
-    <title>Choir Registration Form</title>
+    <title>Choir Sign Up</title>
 </head>
 <body>
-    <div class="container">
-        <div class="background">
-            <img src="" alt="">
-        </div>
-        <div class="form-container">
-            <h1 class="form-title">Choir Registration Form</h1>
+    <section class="main-container">
+        <div class="container">
+            <div class="form-title">Choir Registration Form</div>
             <form action="" method="post">
-                <!-- name -->
+                <input type="text" name="fname" id="fname" placeholder="Full name" required><br>
                 <div class="field">
-                    <input type="text" name="fname" id="fname" placeholder="First Name">
-                    <input type="text" name="lname" id="lname" placeholder="Last Name">
+                    <div class="gender">
+                        <div class="radio">
+                            <input type="radio" name="gender" id="male" value="male">
+                            <label for="male"><i class="fa-solid fa-m letters"></i></label><br>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="female"><i class="fa-solid fa-f letters"></i></label><br>
+                        </div>
+                    </div>
+                    <div class="date">
+                        <input type="date" name="DoB" id="dateOfBirth" required><br>
+                    </div>
                 </div>
-                <!-- date of birth -->
-                <div class="field">
-                    <input type="date" name="dob" id="dob">
-                </div>
-                <!-- email -->
-                <div class="field">
-                    <input type="email" name="email" id="email">
-                </div>
-                <!-- phone number -->
-                <div class="field">
-                    <input type="text" name="phone" id="phone">
-                </div>
-                <!-- parents phone -->
-                <div class="field">
-                    <input type="text" name="p-phone" id="p-phone">
-                </div>
-                <!-- social media -->
-                <!-- thinking about having icons and then you choose one to fill and the icon sets a differrent attribute to the input field -->
-                <button type="submit">Submit</button>
+                <input type="tel" name="phone" id="phone" placeholder="Phone Number" required><br>
+                <input type="tel" name="p-phone" id="p-phone" placeholder="Parent's Phone Number" required><br>
+                <input type="text" name="address" id="address" placeholder="House Address" required><br>
+                <input type="text" name="instagram" id="instagram" placeholder="Instagram ID"><br>
+                <input type="text" name="facebook" id="facebook" placeholder="Facebook ID"><br>
+                <button type="submit" id="subBtn"><i class="fa-solid fa-paper-plane"></i> submit</button>
             </form>
         </div>
-    </div>
+    </section>
 </body>
 </html>
